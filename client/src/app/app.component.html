@@ -1,16 +1,6 @@
-<div>
-  <b>Add a new number: </b>
-  <div class="input">
-    <input [(ngModel)]="number" />
-    <button (click)="addNumber()">Add</button>
-  </div>
-  <div class="numbers">
-    <b>Number list: </b>
+<h1>Starting the app</h1>
 
-    <div *ngFor="let number of numbers">
-      {{ number }}
-    </div>
-  </div>
-</div>
+<div [innerHTML]="chord"></div>
+
 
 <router-outlet></router-outlet>
